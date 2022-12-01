@@ -1,5 +1,5 @@
 import "./App.css";
-import { Home, Navbar} from "./components";
+import { Contact, Home, Navbar} from "./components";
 import { Header, Features, Blog, Footers } from "./containers";
 
 
@@ -9,8 +9,10 @@ function App() {
       <header className="App-header">
         <h3>Hello I am Solato Library</h3>
         <Navbar />
+        <Header />
         <Home />
       </header>
+      <Contact />
     </div>
   );
 }

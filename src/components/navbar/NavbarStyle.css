@@ -1,6 +1,6 @@
 .container-navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   padding: 2rem 6rem;
@@ -26,7 +26,7 @@
 }
 .navbar-sign {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -45,9 +45,9 @@
 .navbar-sign button,
 .container-navbar-side button {
   padding: 0.5rem 1rem;
-  
+
   font-family: var(--font-family);
-  color:#fff;
+  color: #fff;
   font-weight: 500;
   font-size: 18px;
 
@@ -59,44 +59,62 @@
   cursor: pointer;
 }
 .navbar-menu {
-    margin-left: 1rem;
-    display: none;
-    position: relative;
+  margin-left: 1rem;
+  display: none;
+  position: relative;
 }
 .navbar-menu svg {
-    cursor: pointer;
+  cursor: pointer;
 }
-.navbar-menu_container_links{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: column;
+.navbar-menu_container_links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
 
-    text-align: end;
-    background: var(--color-footer);
-    padding: 2rem;
-    position: absolute;
-    top: 40px;
-    right: 0;
-    margin-top: 1rem;
-    min-width: 210px;
-    border-radius: 10px;
-    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+  text-align: end;
+  background: var(--color-footer);
+  padding: 2rem;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  margin-top: 1rem;
+  min-width: 210px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 .navbar-menu_container_links p {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
-.navbar-menu_container_links_sign{
+.navbar-menu_container_links_sign {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .navbar-links-container {
     display: none;
+  }
+  .navbar-menu {
+    display: flex;
+  }
 }
 
-@media screen and (max-width: 1050px){
-    .navbar-links-container{
-        display: none;
-    }
-    .navbar-menu{
-        display: flex;
-    }
+@media screen and (max-width: 700px) {
+  .navbar {
+    padding: 2rem 4rem;
+  }
 }
-
-
+@media screen and (max-width: 550px) {
+  .container-navbar {
+    padding: 2rem;
+  }
+  .navbar-sign {
+    display: none;
+  }
+  .navbar-menu_container_links {
+    top: 20px;
+  }
+  .navbar-menu_container_links_sign {
+    display: block;
+  }
+}

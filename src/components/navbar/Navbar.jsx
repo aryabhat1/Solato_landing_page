@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./NavbarStyle.css";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import logo from "../../assets/logo.jpg";
 
 const Menu = () => (
   <>
@@ -27,7 +28,7 @@ const Navbar = () => {
       <div className="container-navbar-side">
         {/* Left Side */}
         <div className="navbar-links-container-left">
-          <img src="logo" alt="no logo" srcset="/assets/logo.jpg" />
+          <img src={logo} alt="no logo" srcset="" />
         </div>
 
         {/* Right Side */}
@@ -58,6 +59,10 @@ const Navbar = () => {
           <div className="navbar-menu scale-up-center">
             <div className="navbar-menu_container_links">
               <Menu />
+            </div>
+            <div className="navbar-menu_container_links_sign">
+              <p>Sign in</p>
+              <button type="button">Sign up</button>
             </div>
           </div>
         )}
