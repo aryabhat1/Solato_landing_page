@@ -8,6 +8,11 @@ const Menu = () => (
     <p>
       <a href="#home">Home</a>
     </p>
+
+    <p>
+      <a href="#solato">Solato</a>
+    </p>
+
     <p>
       <a href="#developers">Developers</a>
     </p>

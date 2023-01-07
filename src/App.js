@@ -1,20 +1,35 @@
 import "./App.css";
-import { Contact, Home, Navbar} from "./components";
-import { Header, Features, Blog, Footers } from "./containers";
-
+import { Contact, /*Home */ Navbar, Brands, CTA } from "./components";
+import {
+    Header,
+    Features,
+    Blog,
+    /*Footers, */ WhatSolato,
+    Developers,
+    Resources,
+} from "./containers";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h3>Hello I am Solato Library</h3>
-        <Navbar />
-        <Header />
-        <Home />
-      </header>
-      <Contact />
-    </div>
-  );
+    return (
+        <div className="App">
+            <div className="gradient__bg">
+                {/* <h3>Hello I am Solato Library</h3> */}
+                <Navbar />
+                <Header />
+            </div>
+
+            {/* <Home /> */}
+            <Brands />
+            <WhatSolato />
+            <Features />
+            <Developers />
+            <CTA />
+            <Resources />
+            <Blog />
+            <Contact />
+            {/* <Footers /> */}
+        </div>
+    );
 }
 
 export default App;

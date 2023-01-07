@@ -1,46 +1,86 @@
 .header {
-  display: flex;
+    display: flex;
 }
 
 .header-container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 
-  color: #fff;
+    color: #fff;
 }
 
 .header-container h1 {
-  font-family: var(--font-family);
-  font-weight: 800;
-  font-size: 62px;
-  line-height: 75px;
-  letter-spacing: -0.04rem;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04rem;
 }
 
 .header-container h4 {
-  font-family: var(--font-family);
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 27px;
-  letter-spacing: -0.04rem;
-  margin-top: 1.5rem;
-  color: #81afdd;
+    font-family: var(--font-family);
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.04rem;
+    margin-top: 1.5rem;
+    color: #81afdd;
 }
 
-.header-content {
-  margin-right: 5rem;
-  color: #fff;
+.header-content__input {
+    height: 8%;
+    margin: 4rem 2rem 2rem;
+
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .header-content__input input {
+    width: 300px;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+
+    background: var(--color-footer);
+    border: 2px solid var(--color-footer);
+    /* color: #fff; */
+
+    outline: none;
+    
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
 }
 
-.header-container-button{
-  display: flex;
-  
+.header-content__input > button {
+    display: flex;
+    justify-content: spacing;
+    color: #fff;
+    margin-left: 1.5rem;
+
+    padding: 0.8rem 1.7rem 1.5rem;
+
+    font-weight: 500;
+    font-size: 18px;
+
+    background: #ff4820;
+    border-radius: 10px;
+    /* line-height: 25px; */
+    border: 0;
+    outline: none;
+    cursor: pointer;
 }
 
-.header-container-button button{
+.header-container-button {
+    display: flex;
+}
+
+.header-container-button button {
     display: flex;
     justify-content: spacing;
     color: #fff;
@@ -55,15 +95,18 @@
     border: 0;
     outline: none;
     cursor: pointer;
+}
 
-
-
+.header-content__people {
+    margin-right: 5rem;
+    color: #fff;
 }
 .case_button {
-  font: #fff;
+    font: #fff;
 }
 
 .header_content_image img {
-  width: 550px;
-  height: 550px;
+    width: 550px;
+    height: 550px;
+    border-radius: 20px;
 }

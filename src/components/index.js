@@ -6,4 +6,7 @@ export { default as Discover } from "./discover/Discover";
 export { default as Navbar } from "./navbar/Navbar";
 export { default as Cases } from "./cases/Cases";
 export { default as Clients } from "./clients/Clients";
-
+export { default as Brands } from "./brands/Brands";
+export { default as Feature } from "./feature/Feature";
+export { default as CTA } from "./cta/CTA.jsx";
+export { default as Article } from "./article/Article";
