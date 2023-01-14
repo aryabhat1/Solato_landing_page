@@ -6,7 +6,7 @@ const Blog = () => {
     return (
         <div className='blog section__padding id="blog"'>
             <div className="blog-heading">
-                <h1 className="gradient__text">Solato Blog</h1>
+                <h1 className="gradient__text">Solato Blog - Explore the World!</h1>
                 <h3 className="gradient__subtext">
                     Automate Your Transactions
                 </h3>

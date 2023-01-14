@@ -5,7 +5,7 @@ import devImage from "../../assets/developer.jpg";
 
 const Developers = () => {
     return (
-        <div className="developers section__padding">
+        <div className="developers section__padding" id="developers">
             <div className="developers-image">
                 <img src={devImage} alt="devImage" srcset="" />
             </div>

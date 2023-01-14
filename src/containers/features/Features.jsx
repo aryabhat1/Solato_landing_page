@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 import React from "react";
 import Feature from "../../components/feature/Feature.jsx";
 import "./FeaturesStyle.css";
@@ -32,7 +23,7 @@ const featuresData = [
 
 const Features = () => {
     return (
-        <div className="features section__padding" id="features">
+        <div className="features section__padding" id="resources">
             <div className="features-heading">
                 <h1 className="gradient__text">
                     The Future is Now and You Just Need to Realize It. Step into
