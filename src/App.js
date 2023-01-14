@@ -1,10 +1,11 @@
 import "./App.css";
-import { Contact, /*Home */ Navbar, Brands, CTA } from "./components";
+import { /* Contact */ /*Home */ Navbar, Brands, CTA } from "./components";
 import {
     Header,
     Features,
     Blog,
-    /*Footers, */ WhatSolato,
+    Footer,
+    WhatSolato,
     Developers,
     Resources,
 } from "./containers";
@@ -20,14 +21,14 @@ function App() {
 
             {/* <Home /> */}
             <Brands />
-            <WhatSolato /> 
+            <WhatSolato />
             <Features />
             <Developers />
             <CTA />
             <Resources />
             <Blog />
-            <Contact />
-            {/* <Footers /> */}
+            {/* <Contact /> */}
+            <Footer />
         </div>
     );
 }

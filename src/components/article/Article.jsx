@@ -1,12 +1,23 @@
-import React from 'react'
-import './ArticleStyle.css'
+import React from "react";
+import "./ArticleStyle.css";
 
-const Article = () => {
-  return (
-    <div>Article My Blog</div>
-  )
-}
+const Article = ({ imgUrl, date, text }) => {
+    return (
+        <div className="blog-container_article">
+            <div className="blog-container_article_image">
+                <img src={imgUrl} alt="blog_image" srcset="" />
+            </div>
 
-export default Article
+            <div className="blog-container_article-container">
+                <div>
+                    <p>{date}</p>
+                    <h3>{text}</h3>
+                </div>
 
-// 2.37/9.44 Jan 06, 2023- 1.29AM
+                <p>Read full Article</p>
+            </div>
+        </div>
+    );
+};
+
+export default Article;
