@@ -20,8 +20,8 @@ function App() {
 
             {/* <Home /> */}
             <Brands />
-            <WhatSolato />
-            <Features />
+            <WhatSolato /> 
+            {/* <Features />  */}
             <Developers />
             <CTA />
             <Resources />
